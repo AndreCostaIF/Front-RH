@@ -1,0 +1,333 @@
+<<<<<<< HEAD
+CRITICAL - 2022-02-26 20:55:05 --> Undefined variable $res
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\php\\htdocs\\m...', 35)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->indexDeUnicoFuncionario('3')
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 21:09:39 --> Undefined variable $funcionario
+#0 C:\php\htdocs\moduloRh\app\Views\ferias-funcionario.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\php\\htdocs\\m...', 20)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ferias-funciona...', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(38): view('ferias-funciona...', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->indexDeUnicoFuncionario('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:10:28 --> Undefined variable $funcionario
+#0 C:\php\htdocs\moduloRh\app\Views\ferias-funcionario.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\php\\htdocs\\m...', 20)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ferias-funciona...', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(38): view('ferias-funciona...', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->indexDeUnicoFuncionario('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:14:29 --> Cannot access offset of type string on string
+#0 C:\php\htdocs\moduloRh\system\View\View.php(210): include()
+#1 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ferias-funciona...', Array, true)
+#3 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(39): view('ferias-funciona...', Array)
+#4 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->indexDeUnicoFuncionario('3')
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-26 21:21:02 --> Trying to access array offset on value of type int
+#0 C:\php\htdocs\moduloRh\app\Views\register-ferias.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\php\\htdocs\\m...', 99)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('register-ferias', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(65): view('register-ferias', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->saveFerias('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:22:53 --> Trying to access array offset on value of type int
+#0 C:\php\htdocs\moduloRh\app\Views\register-ferias.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\php\\htdocs\\m...', 99)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('register-ferias', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(66): view('register-ferias', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->saveFerias('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:24:39 --> Trying to access array offset on value of type int
+#0 C:\php\htdocs\moduloRh\app\Views\register-ferias.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\php\\htdocs\\m...', 99)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('register-ferias', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(66): view('register-ferias', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->saveFerias('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:29:18 --> Undefined array key "funcionario"
+#0 C:\php\htdocs\moduloRh\app\Views\register-ferias.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 70)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('register-ferias', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(66): view('register-ferias', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->saveFerias('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:29:21 --> Undefined array key "funcionario"
+#0 C:\php\htdocs\moduloRh\app\Views\register-ferias.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 70)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('register-ferias', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(66): view('register-ferias', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->saveFerias('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:29:22 --> Undefined array key "funcionario"
+#0 C:\php\htdocs\moduloRh\app\Views\register-ferias.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 70)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('register-ferias', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(66): view('register-ferias', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->saveFerias('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:29:39 --> Undefined array key "funcionario"
+#0 C:\php\htdocs\moduloRh\app\Views\register-ferias.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 70)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('register-ferias', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(66): view('register-ferias', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->saveFerias('3')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:35:24 --> Undefined array key "inicio_das_ferias"
+#0 C:\php\htdocs\moduloRh\app\Views\register-ferias.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 77)
+#1 C:\php\htdocs\moduloRh\system\View\View.php(210): include('C:\\php\\htdocs\\m...')
+#2 C:\php\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\php\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('register-ferias', Array, true)
+#4 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(68): view('register-ferias', Array)
+#5 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->saveFerias('2')
+#6 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#7 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 21:36:43 --> Trying to access array offset on value of type null
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\php\\htdocs\\m...', 127)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->salvarEditFerias('2')
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 21:37:35 --> Undefined array key "id"
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 75)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->salvarFerias('2')
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 21:43:01 --> Undefined array key "id"
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 75)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->salvarFerias('2')
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 21:43:58 --> Undefined array key "id"
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 75)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->salvarFerias('2')
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 21:44:12 --> Undefined array key "id"
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 75)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->salvarFerias('2')
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 21:45:40 --> Undefined array key "id"
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\php\\htdocs\\m...', 75)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->salvarFerias('2')
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 22:43:31 --> Undefined variable $view
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\php\\htdocs\\m...', 39)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->indexDeUnicoFuncionario()
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 22:45:18 --> Undefined variable $view
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\php\\htdocs\\m...', 39)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->indexDeUnicoFuncionario()
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-26 22:47:21 --> Undefined variable $view
+#0 C:\php\htdocs\moduloRh\app\Controllers\FeriasController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\php\\htdocs\\m...', 39)
+#1 C:\php\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\FeriasController->indexDeUnicoFuncionario()
+#2 C:\php\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FeriasController))
+#3 C:\php\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\php\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+=======
+CRITICAL - 2022-02-26 16:07:17 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#2 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(29): view('ajustes-salaria...', Array)
+#3 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index()
+#4 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-26 16:14:35 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#2 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(29): view('ajustes-salaria...', Array)
+#3 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index()
+#4 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-26 16:29:10 --> Undefined offset: 3
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(29): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index()
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 16:29:31 --> Undefined offset: -3
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(29): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index()
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 16:29:44 --> Undefined offset: -3
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(29): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index()
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 17:29:27 --> Too few arguments to function App\Controllers\AjustesSalariais::index(), 0 passed in C:\xampp\htdocs\moduloRh\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index()
+#1 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#2 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-26 17:34:11 --> Undefined index: name
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(20): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index('17')
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 17:36:39 --> Undefined index: id
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(20): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index('17')
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 17:41:23 --> Undefined variable: item
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(20): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index('17')
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 17:41:45 --> Undefined variable: item
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(20): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index('17')
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 17:41:47 --> Undefined variable: item
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(20): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index('17')
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 17:41:59 --> Undefined index: cargo
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 13, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(20): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index('17')
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 17:44:24 --> Undefined offset: 0
+#0 C:\xampp\htdocs\moduloRh\app\Views\ajustes-salariais.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 13, Array)
+#1 C:\xampp\htdocs\moduloRh\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\moduloRh\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\moduloRh\system\Common.php(1089): CodeIgniter\View\View->render('ajustes-salaria...', Array, true)
+#4 C:\xampp\htdocs\moduloRh\app\Controllers\AjustesSalariais.php(20): view('ajustes-salaria...', Array)
+#5 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index('5')
+#6 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#7 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-26 17:46:10 --> Too few arguments to function App\Controllers\AjustesSalariais::index(), 0 passed in C:\xampp\htdocs\moduloRh\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(825): App\Controllers\AjustesSalariais->index()
+#1 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjustesSalariais))
+#2 C:\xampp\htdocs\moduloRh\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\moduloRh\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+>>>>>>> 26fa977a148bc596e2463630e508f17410d797e1
