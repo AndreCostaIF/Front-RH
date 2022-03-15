@@ -533,6 +533,14 @@ class Funcionarios extends BaseController
 
          //Json para Array 
          $resultado = json_decode(curl_exec($ch), true);
+         
+         if($resultado["usuario"]['authorities'][0]['authority'] = "ROLE_ADMIN"){
+            
+            $resultado["usuario"]['authorities'] = "ROLE_ADMIN,ROLE_USER";
+        }else{
+            $resultado["usuario"]['authorities'] = "ROLE_USER";
+        }
+
        
 
         return redirect()->to(site_url("Funcionarios/promocao/{$resultado['id']}"));
