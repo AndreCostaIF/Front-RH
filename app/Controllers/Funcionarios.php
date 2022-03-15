@@ -190,7 +190,7 @@ class Funcionarios extends BaseController
             //Json para Array 
             $view['funcionario'] = $resultado;
             $view['alert'] = 2;
-            $view['dias'] = 0;
+            $view['dias'] = strtotime($post['dataIngresso']) - strtotime(date('d/m/Y'));
 
             return view('dashboard-employee', $view);
         } else {
