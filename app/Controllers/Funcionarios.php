@@ -459,6 +459,15 @@ class Funcionarios extends BaseController
         //Json para Array 
         $view['funcionario'] = json_decode(curl_exec($ch), true);
         
+        if($view['funcionario']["usuario"]['authorities'][0]['authority'] = "ROLE_ADMIN"){
+            
+            $view['funcionario']["usuario"]['authorities'] = "ROLE_ADMIN,ROLE_USER";
+        }else{
+            $view['funcionario']["usuario"]['authorities'] = "ROLE_USER";
+        }
+
+
+        
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
         curl_setopt($ch, CURLOPT_USERPWD, "eduarda" . ":" . "teste");
@@ -474,6 +483,8 @@ class Funcionarios extends BaseController
         $data['cargoAntigo'] = $view['funcionario']['cargo'];
         $data['cargoNovo'] = $view['cargoNovo'];
         $data['dataDaMudanca'] = date('d/m/Y');
+
+
 
      
         $cookies = $this->getToken();
