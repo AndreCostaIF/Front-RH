@@ -99,7 +99,7 @@ class Funcionarios extends BaseController
 
     public function salvarApi()
     {
-        $post = $this->request->getPost(null, FILTER_SANITIZE_STRING);
+        $post = $this->request->getPost(null);
        
         if ($post['id'] == "") {
             
@@ -440,7 +440,7 @@ class Funcionarios extends BaseController
 
     public function salvarPromocao(){
        
-        $post = $this->request->getPost(null, FILTER_SANITIZE_STRING);
+        $post = $this->request->getPost(null);
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);

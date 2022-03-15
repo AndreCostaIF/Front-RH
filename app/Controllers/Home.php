@@ -37,7 +37,7 @@ class Home extends BaseController
     }
     public function logar(){
 
-        $post = $this->request->getPost(null, FILTER_SANITIZE_STRING);
+        $post = $this->request->getPost(null);
         $post['password'] = sha1($post['password']);
        
 
