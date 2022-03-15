@@ -97,7 +97,7 @@ use App\Controllers\Home;
 
                                 <label class="col-md-1 control-label" for="name">Nascimento<h11>*</h11></label>
                                 <div class="col-md-2">
-                                    <input id="dataNasc" name="dataNasc" value="<?php echo date(_v($dados, "dataNasc")) ?>" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="date" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                                    <input id="dataNasc" name="dataNasc" value="" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="date" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
                                 </div>
 
                                 <!-- Multiple Radios (inline) -->
