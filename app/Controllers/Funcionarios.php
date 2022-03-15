@@ -535,7 +535,7 @@ class Funcionarios extends BaseController
          $resultado = json_decode(curl_exec($ch), true);
        
 
-        return redirect()->to(site_url("Funcionarios/promocao/{$resultado['funcionario']['id']}"));
+        return redirect()->to(site_url("Funcionarios/promocao/{$resultado['id']}"));
            
        // echo "<pre>";
         // print_r($resultado['funcionario']['id']);
