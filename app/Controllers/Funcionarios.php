@@ -521,6 +521,18 @@ class Funcionarios extends BaseController
         curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
         //Json para Array 
         $resultado = json_decode(curl_exec($ch), true);
+
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+        curl_setopt($ch, CURLOPT_USERPWD, "eduarda" . ":" . "teste");
+        curl_setopt($ch, CURLOPT_URL, "http://service-api-rh.herokuapp.com/api/cliente/{$post['id_user']}");
+
+        // Receive server response ...
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+         //Json para Array 
+         $resultado = json_decode(curl_exec($ch), true);
        
 
         return redirect()->to(site_url("Funcionarios/promocao/{$resultado['funcionario']['id']}"));
