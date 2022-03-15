@@ -215,7 +215,7 @@ class Funcionarios extends BaseController
             $post['dataUltimoPag'] = $funcionario['dataUltimoPag'];
             $post['dataIngresso'] = $funcionario['dataIngresso'];
             $post['valorDevidoAtual'] = $funcionario['valorDevidoAtual'];
-            $post['dataIngressoCargo'] = "02/02/2022";
+            $post['dataIngressoCargo'] = $funcionario["dataIngressoCargo"];
             $post['dataNasc'] = date('d/m/Y', strtotime($post['dataNasc']));
             $post['password'] = sha1($post['password']);
             $post['usuario']['id'] = $post['id_user'];
