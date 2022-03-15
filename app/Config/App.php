@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://pirh.herokuapp.com/';
+    public $baseURL = 'https://pirh.herokuapp.com/public/';
 
     /**
      * --------------------------------------------------------------------------
