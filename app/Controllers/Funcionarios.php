@@ -279,7 +279,7 @@ class Funcionarios extends BaseController
 
             //Json para Array 
             $view['funcionario'] = $resultado;
-            $res['dias'] = strtotime($funcionario['dataUltimoPag']) - strtotime(date('d/m/Y'));
+            $view['dias'] = strtotime($funcionario['dataUltimoPag']) - strtotime(date('d/m/Y'));
             
            
 
