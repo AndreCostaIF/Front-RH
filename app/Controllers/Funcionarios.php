@@ -316,8 +316,8 @@ class Funcionarios extends BaseController
             $dataCar = strtotime("$dataCargo[2]-$dataCargo[1]-$dataCargo[0]");
             $diasIngressadoNoCargo = ($dataAtu - $dataCar)/86400;
 
-            $res['diasIngressado'] = (int) $diasIngressado;
-            $res['diasIngressadoNoCargo'] = (int) $diasIngressadoNoCargo;
+            $res['diasIngressado'] =  $diasIngressado;
+            $res['diasIngressadoNoCargo'] =  $diasIngressadoNoCargo;
         }
         
         $res['dias'] = strtotime($funcionario['dataUltimoPag']) - strtotime(date('d/m/Y'));
