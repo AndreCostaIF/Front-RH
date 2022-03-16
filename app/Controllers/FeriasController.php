@@ -141,7 +141,7 @@ class FeriasController extends BaseController
         $cliente = json_decode(curl_exec($ch), true);
         $post['funcionario'] = $cliente;
         
-        if($post['funcionario']["usuario"]['authorities'][0]['authority'] = "ROLE_ADMIN"){
+        if(isset($post['funcionario']["usuario"]['authorities'][1]['authority'])){
             
             $post['funcionario']["usuario"]['authorities'] = "ROLE_ADMIN,ROLE_USER";
         }else{
