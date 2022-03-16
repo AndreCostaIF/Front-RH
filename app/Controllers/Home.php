@@ -68,7 +68,7 @@ class Home extends BaseController
             if($funcioarios["usuario"]['authorities'][0]['authority'] = "ROLE_ADMIN"){
             
                 $_SESSION["user"]['authorities'] = "ROLE_ADMIN,ROLE_USER";
-                echo"sou adm";die();
+                echo"<br>";print_r($funcioarios)die();
             }else{
                 $_SESSION["user"]['authorities'] = "ROLE_USER";
                 echo"sou padrao";die();
