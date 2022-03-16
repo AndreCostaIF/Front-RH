@@ -48,11 +48,13 @@
                             <?php endif;?>
                             <?php endif; ?>
                         <?php endif; ?>
-                        <div class="col-xl-3 col-md-6  ">
-                            <div class="card bg-primary text-white mb-4">
-                                <a id="registrarPromocao" name="registrarPromocao" class="btn btn-primary" href="<?= site_url("funcionarios/promocao/{$funcionario['id']}") ?>" role="button">Registrar promoção</a>
+                        <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
+                            <div class="col-xl-3 col-md-6  ">
+                                <div class="card bg-primary text-white mb-4">
+                                    <a id="registrarPromocao" name="registrarPromocao" class="btn btn-primary" href="<?= site_url("funcionarios/promocao/{$funcionario['id']}") ?>" role="button">Registrar promoção</a>
+                                </div>
                             </div>
-                        </div>
+                        <?php endif;?>
                        <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
                         <div class="col-xl-3 col-md-6">
                             <div class="card bg-primary text-white mb-4">
