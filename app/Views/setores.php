@@ -11,7 +11,9 @@
                         Voltar
                     </a>
                 </ol>
-                <a class="btn btn-primary" href="<?= site_url("SetorController/registerSetor") ?>" role="button">Cadastrar Setor</a>
+                <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
+                    <a class="btn btn-primary" href="<?= site_url("SetorController/registerSetor") ?>" role="button">Cadastrar Setor</a>
+                <?php endif;?>
 
                 <div class="row">
 
@@ -27,18 +29,22 @@
                             <thead>
                                 <tr>
                                     <th>Setor</th>
+                                    <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
                                     <th>Editar</th>
                                     <th>Deletar</th>
+                                    <?php endif;?>
 
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
+                                    <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
                                     <th>Nome</th>
                                     <th>
                                         delete
                                     </th>
-
+                                    <?php endif;?>
+    
                                 </tr>
                             </tfoot>
                             <tbody>
@@ -50,6 +56,7 @@
                                                     <?= $item['name'] ?>
                                                 </a>
                                             </th>
+                                            <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
                                             <!--EDIT-->
                                             <th>
                                                 <a id="editar" href="<?= site_url("SetorController/editSetor/{$item['id_Sector']}/{$item['name']}") ?>">
@@ -73,6 +80,7 @@
                                                     </svg>
                                                 </a>
                                             </th>
+                                            <?php endif;?>
 
                                         </tr>
                                     <?php endforeach; ?>
