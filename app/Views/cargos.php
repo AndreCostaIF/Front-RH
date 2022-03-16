@@ -37,7 +37,9 @@
                         <li class="breadcrumb-item active">Painel de Cargos</li>
                     </ol>
                     <?php if (isset($cargos)) : ?>
+                        <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
                         <a class="btn btn-primary" href="<?= site_url("CargoController/registerCargo") ?>" role="button">Cadastrar Cargo</a>
+                        <?php endif;?>
                     <?php else : ?>
                         <div class="alert alert-warning alert-dismissible" role="alert">
                             Selecione um SETOR acima!
@@ -63,8 +65,10 @@
                                         <th>Permissão</th>
                                         <th>Setor</th>
                                         <th>Ajuste Salárial</th>
+                                        <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
                                         <th>Editar</th>
                                         <th>Deletar</th>
+                                        <?php endif;?>
 
                                     </tr>
                                 </thead>
@@ -74,9 +78,12 @@
                                         <th>Salário</th>
                                         <th>Permissão</th>
                                         <th>Setor</th>
-                                        <th>Ajuste Salárial</th>
-                                        <th>Editar</th>
-                                        <th>Deletar</th>
+                                        <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
+                                            <th>Ajuste Salárial</th>
+                                        
+                                            <th>Editar</th>
+                                            <th>Deletar</th>
+                                        <?php endif;?>
 
                                     </tr>
                                 </tfoot>
@@ -104,6 +111,7 @@
                                                         <?= $item['sector']['name'] ?>
                                                     </a>
                                                 </th>
+                                                <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
                                                 <th>
                                                     <a id="ajuste" name="ajuste" href="<?= site_url("ajustesSalariais/index/{$item['id']}") ?>">
                                                         <svg class="edit_cash" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
@@ -136,7 +144,8 @@
                                                         </svg>
                                                     </a>
                                                 </th>
-
+                                                <?php endif;?>
+    
                                             </tr>
                                         <?php endforeach; ?>
                                     <?php endif; ?>
