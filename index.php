@@ -1,5 +1,5 @@
 <?php
 
-return redirect()->to(site_url("Home/index"));
+header('Location: http://pirh.herokuapp.com/public/');
 
 ?>
