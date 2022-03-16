@@ -64,6 +64,14 @@ class Home extends BaseController
         if(isset($funcioarios["name"])){
             $_SESSION["user"]["name"] = $funcioarios["name"];
             $_SESSION['user']['id'] = $funcioarios["id"];
+            
+            if($funcioarios["usuario"]['authorities'][0]['authority'] = "ROLE_ADMIN"){
+            
+                $_SESSION["user"]['authorities'] = "ROLE_ADMIN,ROLE_USER";
+            }else{
+                $_SESSION["user"]['authorities'] = "ROLE_USER";
+            }   
+
             return redirect()->to(site_url("home/principal"));
         }else{
             $this->session->setFlashdata('erro', 'Login ou senha inválida.'); 
