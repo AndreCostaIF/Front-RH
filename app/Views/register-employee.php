@@ -340,7 +340,7 @@ use App\Controllers\Home;
 
                                         <label class="col-md-2 control-label" for="authorities">Nível de acesso<h11>*</h11></label>
                                         <div class="col-md-3">
-                                            <select required name="authorities" class="form-control">
+                                            <select required id="authorities" name="authorities" class="form-control">
                                                 <option value=""></option>
                                                 <option value="ROLE_ADMIN,ROLE_USER">ADMIN</option>
                                                 <option value="ROLE_USER">PADRÃO</option>
