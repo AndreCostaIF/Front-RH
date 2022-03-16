@@ -57,6 +57,7 @@ use App\Controllers\Home;
                     <div class="sb-sidenav-footer">
                         <div class="small">Logado como:</div>
                         <?=$_SESSION['user']['name']?>
+                        <?=$_SESSION["user"]['authorities']?>
                     </div>
                 </nav>
             </div>
