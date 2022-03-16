@@ -229,7 +229,7 @@ class Funcionarios extends BaseController
             unset($post['authorities']);
             echo"<pre>";
             print_r($post);
-            echo "<br><br>FUNCIONARIO<br><br>"
+            echo "<br><br>FUNCIONARIO<br><br>";
             echo"<pre>";
             print_r($funcionario);
             die();
