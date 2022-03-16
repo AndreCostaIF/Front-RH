@@ -35,8 +35,10 @@
                                     <th>Setor</th>
                                     <th>Data de início</th>
                                     <th>Salario</th>
+                                    <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"): ?>
                                     <th>Editar</th>
                                     <th>Excluir</th>
+                                    <?php endif;?>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -48,8 +50,10 @@
                                     <th>Setor</th>
                                     <th>Data de início</th>
                                     <th>Salario</th>
+                                    <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"): ?>
                                     <th>Editar</th>
                                     <th>Excluir</th>
+                                    <?php endif;?>
                                     <th>Abri</th>
                                 </tr>
                             </tfoot>
@@ -81,7 +85,7 @@
                                                     </svg>
                                                 </a>
                                             </th>
-                                            <?php endif;?>
+                                            
                                             <!--DELETE-->
                                             <th>
                                                 <a id="deletar" name="deletar" href="<?= site_url("Funcionarios/deleteFuncionario/{$item['id']}") ?>" onclick='return confirmDeleteUser();'>
@@ -94,6 +98,7 @@
                                                     </svg>
                                                 </a>
                                             </th>
+                                            <?php endif;?>
                                             <th><a id="verMais" name="verMais" class="btn btn-primary" href="<?= site_url("funcionarios/dashboardEmployee/{$item['id']}") ?>" role="button">Ver mais</a></th>
                                         </tr>
 
