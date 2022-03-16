@@ -14,7 +14,7 @@
                     </a>
                 </ol>
                 <a id="registerEmployee" name="registerEmployee" class="btn btn-primary" href="<?= site_url("funcionarios/registerEmployee") ?>" role="button">Cadastrar funcionário</a>
-
+<p><?=$_SESSION["user"]['authorities']?></p>
                 <div class="row">
 
                 </div>
@@ -64,11 +64,12 @@
                                             <th id="username" name="username"><?= $item['usuario']['username'] ?></th>
                                             <th id="cargoName" name="cargoName"><?= $item['cargo']['name'] ?></th>
                                             <th id="setorName" name="setorName"><?= $item['cargo']['sector']['name'] ?></th>
-
+        
                                             <th id="dataIngresso" name="dataIngresso"><?= $item['dataIngresso'] ?></th>
                                             <th id="salario" name="salario">R$<?= number_format($item['cargo']['salario'], 2, ".", ",") ?></th>
                                             <?php if($_SESSION["user"]['authorities'] = "ROLE_ADMIN,ROLE_USER"):?>
                                             <!--EDIT-->
+                                            
                                             <th>
                                                 <a id="editar" name="editar" href="<?= site_url("Funcionarios/registerEmployee/{$item['id']}") ?>">
                                                     <svg class="edit" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
