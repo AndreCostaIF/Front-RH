@@ -208,9 +208,7 @@ class Funcionarios extends BaseController
             //Json para Array 
             $funcionario = json_decode(curl_exec($ch), true);
 
-            echo"<pre>";
-            print_r($funcionario);
-            echo "<br><br>FUNCIONARIO<br><br>";
+          
 
             //Dados do Back para serem enviados para View
             $post['cargo'] = $funcionario['cargo'];
@@ -225,18 +223,13 @@ class Funcionarios extends BaseController
             $post['usuario']['password'] = $post['password'];
             $post['usuario']['authorities'] = $post['authorities'];
             
-            unset($funcionario['usuario']['authorities']);
+        
             
             unset($post['user']);
             unset($post['password']);
             unset($post['authorities']);
             
-            echo"<pre>";
-            print_r($post);
-            echo "<br><br>FUNCIONARIO<br><br>";
-            echo"<pre>";
-            print_r($funcionario);
-            die();
+            
             
             //$payload = json_encode($post);
 
@@ -470,7 +463,7 @@ class Funcionarios extends BaseController
         //Json para Array 
         $view['funcionario'] = json_decode(curl_exec($ch), true);
         
-        if($view['funcionario']["usuario"]['authorities'][0]['authority'] = "ROLE_ADMIN"){
+        if(isset($view['funcionario']["usuario"]['authorities'][1]['authority'])){
             
             $view['funcionario']["usuario"]['authorities'] = "ROLE_ADMIN,ROLE_USER";
         }else{
@@ -556,7 +549,7 @@ class Funcionarios extends BaseController
          //Json para Array 
          $resultado = json_decode(curl_exec($ch), true);
          
-         if($resultado["usuario"]['authorities'][0]['authority'] = "ROLE_ADMIN"){
+         if(isset($resultado["usuario"]['authorities'][1]['authority'])){
             
             $resultado["usuario"]['authorities'] = "ROLE_ADMIN,ROLE_USER";
         }else{
