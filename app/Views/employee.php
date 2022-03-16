@@ -67,7 +67,8 @@
         
                                             <th id="dataIngresso" name="dataIngresso"><?= $item['dataIngresso'] ?></th>
                                             <th id="salario" name="salario">R$<?= number_format($item['cargo']['salario'], 2, ".", ",") ?></th>
-                                            <?php if($_SESSION["user"]['authorities'] = "ROLE_ADMIN,ROLE_USER"):?>
+                                           
+                                            <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"): ?>
                                             <!--EDIT-->
                                             
                                             <th>
