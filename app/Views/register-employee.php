@@ -326,14 +326,14 @@ use App\Controllers\Home;
                                             <input id="user" name="user" type="text" placeholder="" class="form-control input-md" required="">
                                         <?php endif; ?>
 
-                                        <label class="col-md-2 control-label" for="profissao">Senha<h11>*</h11></label>
+                                        </div>
+                                    <div class="form-group">
+                                    <label class="col-md-2 control-label" for="profissao">Senha<h11>*</h11></label>
                                         <div class="col-md-3    ">
                                             <input id="password" name="password" type="text" placeholder="" class="form-control input-md" required="">
 
                                         </div>
-
                                     </div>
-
 
                                     <div class="form-group">
                                         <!-- Text input-->
