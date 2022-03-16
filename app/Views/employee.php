@@ -13,8 +13,9 @@
                         Voltar
                     </a>
                 </ol>
-                <a id="registerEmployee" name="registerEmployee" class="btn btn-primary" href="<?= site_url("funcionarios/registerEmployee") ?>" role="button">Cadastrar funcionário</a>
-
+                <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"): ?>
+                    <a id="registerEmployee" name="registerEmployee" class="btn btn-primary" href="<?= site_url("funcionarios/registerEmployee") ?>" role="button">Cadastrar funcionário</a>
+                <?php endif;?>
                 <div class="row">
 
                 </div>
