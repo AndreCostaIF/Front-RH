@@ -64,8 +64,8 @@
                                         <th>Salário</th>
                                         <th>Permissão</th>
                                         <th>Setor</th>
-                                        <th>Ajuste Salárial</th>
                                         <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
+                                        <th>Ajuste Salárial</th>
                                         <th>Editar</th>
                                         <th>Deletar</th>
                                         <?php endif;?>
