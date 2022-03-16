@@ -57,7 +57,11 @@ use App\Controllers\Home;
                     <div class="sb-sidenav-footer">
                         <div class="small">Logado como:</div>
                         <?=$_SESSION['user']['name']?>
-                        <?=$_SESSION["user"]['authorities']?>
+                        <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
+                        <p>Usuário administrador</p>
+                        <?php else:?>
+                        <p>Usuário padrão</p>
+                        <?php endif;?>
                     </div>
                 </nav>
             </div>
