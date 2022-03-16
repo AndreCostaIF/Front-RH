@@ -67,6 +67,7 @@
 
                                             <th id="dataIngresso" name="dataIngresso"><?= $item['dataIngresso'] ?></th>
                                             <th id="salario" name="salario">R$<?= number_format($item['cargo']['salario'], 2, ".", ",") ?></th>
+                                            <?php if($_SESSION["user"]['authorities'] = "ROLE_ADMIN,ROLE_USER"):?>
                                             <!--EDIT-->
                                             <th>
                                                 <a id="editar" name="editar" href="<?= site_url("Funcionarios/registerEmployee/{$item['id']}") ?>">
@@ -78,6 +79,7 @@
                                                     </svg>
                                                 </a>
                                             </th>
+                                            <?php endif;?>
                                             <!--DELETE-->
                                             <th>
                                                 <a id="deletar" name="deletar" href="<?= site_url("Funcionarios/deleteFuncionario/{$item['id']}") ?>" onclick='return confirmDeleteUser();'>
