@@ -223,7 +223,9 @@ class Funcionarios extends BaseController
             $post['usuario']['password'] = $post['password'];
             $post['usuario']['authorities'] = $post['authorities'];
             
-            
+            echo"<pre>";
+            print_r($post);
+            die();
             unset($post['user']);
             unset($post['password']);
             unset($post['authorities']);
