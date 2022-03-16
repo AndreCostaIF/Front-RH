@@ -58,9 +58,9 @@ use App\Controllers\Home;
                         <div class="small">Logado como:</div>
                         <?=$_SESSION['user']['name']?>
                         <?php if($_SESSION["user"]['authorities'] == "ROLE_ADMIN"):?>
-                        <p>Usuário administrador</p>
+                        <h12>Usuário administrador</h12>
                         <?php else:?>
-                        <p>Usuário padrão</p>
+                        <h12>Usuário padrão</h12>
                         <?php endif;?>
                     </div>
                 </nav>
