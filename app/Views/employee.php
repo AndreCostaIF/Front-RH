@@ -14,7 +14,7 @@
                     </a>
                 </ol>
                 <a id="registerEmployee" name="registerEmployee" class="btn btn-primary" href="<?= site_url("funcionarios/registerEmployee") ?>" role="button">Cadastrar funcionário</a>
-<p><?=$_SESSION["user"]['authorities']?></p>
+
                 <div class="row">
 
                 </div>
